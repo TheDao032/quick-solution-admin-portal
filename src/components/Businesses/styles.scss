@@ -1,0 +1,27 @@
+// Styles
+.business-img-box {
+  border: solid 1px silver;
+  background-color: #fafafa;
+  cursor: pointer;
+}
+.business-img-box .user-imgage {
+  margin: auto;
+  width: 100%;
+}
+.modal-select-business {
+  position: relative;
+}
+.modal-select-business th.MuiTableCell-root:nth-of-type(2),
+.modal-select-business th.MuiTableCell-root:last-child{
+  border-radius: 0 !important;
+}
+.modal-select-business td.MuiTableCell-root:last-child,
+.modal-select-business td.MuiTableCell-root:first-child{
+  width: auto !important;
+  max-width: fit-content !important;
+  min-width: fit-content !important;
+}
+.modal-select-business .control-select{
+  bottom:10px;
+  left: 15px
+}

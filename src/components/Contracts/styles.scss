@@ -1,0 +1,19 @@
+// Styles
+#contract-div {
+  .overlay-box {
+    margin-top: 15px;
+    padding: 2px;
+    width: 1200px;
+  }
+  .overlay-toolbars {
+    position: absolute;
+    right: -12px;
+    top: -12px;
+    z-index: 2004;
+  }
+}
+#contract-products-div {
+  .overlay-box {
+    margin-top: 50px;
+  }
+}

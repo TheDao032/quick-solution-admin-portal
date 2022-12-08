@@ -1,0 +1,34 @@
+.membership-type {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 1101;
+  overflow: auto;
+}
+.membership-type::after {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1102;
+  background-color: silver;
+  opacity: 0.8;
+}
+.membership-type-box {
+  position: relative;
+  max-width: 96%;
+  max-height: 96%;
+  width: 960px;
+  margin: 110px auto 0 auto;
+  z-index: 2003;
+}
+.user-imgage {
+  width: 120px;
+  height: 120px;
+}

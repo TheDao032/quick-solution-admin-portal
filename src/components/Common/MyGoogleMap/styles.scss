@@ -1,0 +1,40 @@
+.my-google-map {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 2001;
+  overflow: auto;
+}
+.my-google-map::after {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2002;
+  background-color: silver;
+  opacity: 0.3;
+}
+.my-gmap-box {
+  position: relative;
+  max-width: 96%;
+  max-height: 96%;
+  width: 800px;
+  height: 600px;
+  margin: 110px auto 0 auto;
+  border: solid 1px silver;
+  padding: 15px;
+  background-color: white;
+  z-index: 2003;
+}
+.my-gmap-tools {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  z-index: 1;
+}

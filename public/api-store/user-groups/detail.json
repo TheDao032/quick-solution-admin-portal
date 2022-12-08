@@ -1,0 +1,8 @@
+{
+  "items": {
+		  "id": 1,
+		  "groupname": "Group_01",
+		  "description": "Test group",
+		  "issystem": true
+		}
+}

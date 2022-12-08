@@ -1,0 +1,91 @@
+// Styles
+#cdl-care {
+  .cdl-arrow {
+    position: absolute;
+    z-index: 1;
+  }
+  .cdl-arrow-left {
+    left: -50px;
+    top: 50px;
+  }
+  .cdl-arrow-right {
+    right: -50px;
+    top: 50px;
+  }
+  .user-imgage {
+    width: 1.5em;
+    height: 1.5em;
+    float: left;
+    margin: initial;
+  }
+  .workflows > div {
+    border: solid 2px #f0f0f0;
+    position: relative;
+    padding: 2px;
+    margin-right: 10px;
+    border-radius: 5px; 
+  }
+  .workflows > div::after {
+    content: " ";
+    border: solid transparent;
+    width: 0;
+    height: 0;
+    position: absolute;
+    pointer-events: none;
+    right: -20px;
+    border-left-color: #e0e0e0;
+    border-width: 10px;
+  }
+  .workflows > div:last-child::after {
+    border: none 0;
+  }
+  .comment-box {
+    border: dashed 1px silver;
+  }
+  .comment-box .user-imgage {
+    width: 3.5em;
+    height: 3.5em;
+  }
+  .comment-box-label {
+    background-color: #efefef;
+  }
+  .comment-box-body {
+    height: 350px;
+    overflow: auto;
+  }
+  .comment-box h4 {
+    font-size: 1rem; 
+  }
+  .comment-box-body .media {
+    border-bottom: dashed 1px silver;
+  }
+  .history-box {
+    border: dashed 1px silver;
+  }
+  .history-box .user-imgage {
+    width: 2.5em;
+    height: 2.5em;
+  }
+  .history-box-label {
+    background-color: #efefef;
+  }
+  .history-box-body {
+    height: 550px;
+    overflow: auto;
+  }
+  .history-item {
+    border-bottom: dashed 1px silver; 
+  }
+  .history-item h4 {
+    font-size: 1rem;
+  }
+  .history-box blockquote {
+    border-left: dashed silver 2px;
+    font-size: 100%;
+  }
+}
+.MuiDialog-root.no-overflow .MuiDialog-paper,
+.MuiDialog-root.no-overflow .MuiDialogContent-root
+{
+  overflow-y: visible;
+}

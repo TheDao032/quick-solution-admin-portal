@@ -1,0 +1,34 @@
+{
+  "items": [
+		{
+		  "id": 1,
+		  "groupname": "Group_01",
+		  "description": "Test group",
+		  "issystem": true
+		},
+		{
+		  "id": 2,
+		  "groupname": "Group_02",
+		  "description": "Test group",
+		  "issystem": true
+		},
+		{
+		  "id": 3,
+		  "groupname": "Group_03",
+		  "description": "Test group",
+		  "issystem": true
+		},
+		{
+		  "id": 4,
+		  "groupname": "Group_04",
+		  "description": "Test group",
+		  "issystem": true
+		},
+		{
+		  "id": 5,
+		  "groupname": "Group_05",
+		  "description": "Test group",
+		  "issystem": true
+		}
+	]
+}
