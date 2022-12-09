@@ -1,9 +1,11 @@
 name: Deploy
 
 on:
-  push:
-    branches:
-      - main
+  workflow_call:
+    inputs:
+      ENV:
+        type: string
+        default: "dev"
 
 jobs:
   build:
@@ -15,6 +17,6 @@ jobs:
       - name: Deploy
         uses: akhileshns/heroku-deploy@v3.12.12
         with:
-          heroku_api_key: "80b8851b-0254-47c4-924b-6b1157ece1d7"
-          heroku_app_name: "quick-solution"
-          heroku_email: "20424010@student.hcmus.edu.vn"
+          heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
+          heroku_app_name: ${{ secrets.HEROKU_APP_NAME }}
+          heroku_email: ${{ secrets.HEROKU_EMAIL }}

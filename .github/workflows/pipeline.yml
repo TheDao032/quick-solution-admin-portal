@@ -1,0 +1,21 @@
+name: Root pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-dev:
+    if: startsWith(github.ref, 'refs/heads/')
+    uses: ./.github/workflows/build.yml
+    secrets: inherit
+
+  deploy-dev:
+    if: github.ref == 'refs/heads/main'
+    needs: [build-dev]
+    uses: ./.github/workflows/deploy.yml
+    secrets: inherit
